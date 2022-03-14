@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+:root {
+    --hover: #cf000f;;
+    --title-color: #fff;
+    --body-color: #767676;
+    --transition: all linear .3s;
+    --heading: 'Russo One', sans-serif;
+    --paragraph:'DM Sans', sans-serif;
+}
+
+body{
+    background: #161616;
+}
+
+b{
+    color: var(--hover);
+}
+
+/* ===========================
+        COMMON CSS END
+============================*/
+
+/* ===========================
+        NAV CSS START
+============================*/
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+#nav .menu li a{
+    margin: 0 5px;
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--heading);
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+#nav .menu li .contact{
+    margin: 0;
+    padding: 8px 15px;
+    background: var(--hover);
+    border-radius: 3px;
+}
+
+#nav .menu li a:hover{
+    color: var(--hover);
+}
+
+#nav .menu li .contact{
+    color: var(--title-color) !important;
+}
+/* ===========================
+        NAV CSS END
+============================*/
+
+
+/* ===========================
+        BANNER CSS START
+============================*/
+#banner{
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* #banner:after{
+    position: relative;
+} */
+
+#banner:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+#banner .banner_store h3{
+    color: var(--title-color);
+    font-size: 70px;
+    font-weight: 500;
+    font-family: var(--heading);
+    text-transform: capitalize;
+}
+#banner .banner_store p{
+    color: var(--body-color);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--paragraph);
+    line-height: 24px;
+    margin-top: 10px;
+}
+#banner .banner_store .btn a{
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--heading);
+    background: var(--hover);
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#banner .banner_store .btn{
+    position: relative;
+}
+
+#banner .banner_store .btn .round{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    color: var(--title-color);
+    border: 1px solid var(--title-color);
+    text-align: center;
+    line-height: 90px;
+    right: -30px;
+    top: -15px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#banner .banner_store .btn a:hover{
+    background: #9e000b;
+}
+
+#banner .banner_store .btn .round:hover{
+    color: var(--title-color);
+    border: 1px solid var(--hover);
+
+    background: var(--hover);
+}
+
+/* ===========================
+        BANNER CSS END
+============================*/
+
+
+/* ===========================
+        SALE CSS START
+============================*/
+#sale{
+    padding: 90px 0;
+}
+
+#sale .sale_img{
+    position: relative;
+    overflow: hidden;
+} 
+
+#sale .sale_img img{
+    width: 100%;
+    max-width: 100%;
+    transform: var(--transition);
+    -webkit-transform: var(--transition);
+    -moz-transform: var(--transition);
+    -ms-transform: var(--transition);
+    -o-transform: var(--transition);
+}
+
+#sale .sale_img .sale_text .sale_round{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 25px solid rgba(117, 117, 117, 0.2);
+    bottom: -70px;
+    right: -70px;
+    transform: scale(0);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#sale .sale_img .sale_text .sale_round .heart{
+    color: var(--title-color);
+    position: absolute;
+    top: 0;
+    left: -3px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+#sale .sale_img .sale_text .sale_round .cart {
+    color: var(--title-color);
+    position: absolute;
+    top: -18px;
+    left: 25px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+#sale .sale_img .sale_text .sale_round .gift {
+    color: var(--title-color);
+    position: absolute;
+    top: 27px;
+    left: -18px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#sale .sale_img:hover .sale_text .sale_round{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+#sale .sale_img .sale_text .sale_round .cart:hover,
+#sale .sale_img .sale_text .sale_round .gift:hover,
+#sale .sale_img .sale_text .sale_round .heart:hover{
+    color: var(--hover);
+}
+/* ===========================
+        SALE CSS END
+============================*/
+/* ===========================
+        ABOUT CSS START
+============================*/
+
+#about .section_heading{
+    color: var(--title-color);
+    font-size: 100px;
+    font-family: 400;
+    font-family: var(--heading);
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+#about .section_heading:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 8px;
+    background: var(--hover);
+}
+
+#about .about_img{
+    border-top: 5px solid rgba(118, 118, 118, 0.2);
+    border-left: 5px solid rgba(118, 118, 118, 0.2);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#about .about_img img{
+    width: 100%;
+    max-width: 100%;
+    filter: grayscale(100%);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#about .about_text h3{
+    color: var(--hover);
+    font-size: 18px;
+    font-family: 400;
+    font-family: var(--heading);
+    letter-spacing: 6px;
+    margin-bottom: 15px;
+}
+
+#about .about_text h4{
+    color: var(--title-color);
+    font-size: 32px;
+    font-family: 400;
+    font-family: var(--heading);
+    text-transform: uppercase;
+}
+
+#about .about_text p{
+    color: var(--body-color);
+    font-size: 14px;
+    font-family: 400;
+    font-family: var(--paragraph);
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+#about .about_text p span{
+    display: block;
+    margin-top: 30px;
+}
+
+#about .about_text a{
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--heading);
+    background: var(--hover);
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#about .about_text a:hover{
+    background: #9e000b;
+}
+
+#about .about_img:hover img{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+#about .about_img:hover{
+    border-color: var(--hover);
+}
+/* ===========================
+        ABOUT CSS END
+============================*/
+
+
+/* ===========================
+        NAV CSS START
+============================*/
+/* ===========================
+        NAV CSS END
+============================*/
