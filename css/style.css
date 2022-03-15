@@ -94,10 +94,6 @@ b{
     z-index: 1;
 }
 
-/* #banner:after{
-    position: relative;
-} */
-
 #banner:after{
     content: '';
     position: absolute;
@@ -124,6 +120,12 @@ b{
     line-height: 24px;
     margin-top: 10px;
 }
+
+#banner .banner_store .btn{
+    position: relative;
+    margin-top: 55px;
+}
+
 #banner .banner_store .btn a{
     color: var(--title-color);
     font-size: 18px;
@@ -140,9 +142,7 @@ b{
     -o-transition: var(--transition);
 }
 
-#banner .banner_store .btn{
-    position: relative;
-}
+
 
 #banner .banner_store .btn .round{
     position: absolute;
@@ -270,6 +270,28 @@ b{
         ABOUT CSS START
 ============================*/
 
+#about{
+    position: relative;
+}
+
+#about:after{
+    position: absolute;
+    content: '';
+    top: 50px;
+    right: -400px;
+    width: 800px;
+    height: 800px;
+    border: 80px solid #161616;
+    transform: rotate(35deg);
+    z-index: -1;
+    -webkit-box-shadow: 0 25px 60px rgb(0 0 0 / 67%), inset 0 25px 60px rgb(0 0 0 / 67%);
+    box-shadow: 0 25px 60px rgb(0 0 0 / 67%), inset 0 25px 60px rgb(0 0 0 / 67%);
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+}
+
 #about .section_heading{
     color: var(--title-color);
     font-size: 100px;
@@ -303,7 +325,8 @@ b{
 #about .about_img img{
     width: 100%;
     max-width: 100%;
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
     transition: var(--transition);
     -webkit-transition: var(--transition);
     -moz-transition: var(--transition);
@@ -377,8 +400,632 @@ b{
 
 
 /* ===========================
+        STREAM CSS START
+============================*/
+#stream{
+    padding: 90px 0;
+}
+
+#stream .section_heading{
+    color: var(--title-color);
+    font-size: 100px;
+    font-family: 400;
+    font-family: var(--heading);
+    text-transform: capitalize;
+    position: relative;
+     margin-bottom: 60px;
+}
+
+#stream .section_heading:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 8px;
+    background: var(--hover);
+}
+
+#stream .live_img {
+    position: relative;
+}
+
+#stream .live_img .plus{
+    position: absolute;
+    color: var(--title-color);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background: var(--hover);
+}
+
+#stream .live_text{
+    padding: 20px;
+    background: #191919;
+}
+
+#stream .live_text h3{
+    color: var(--title-color);
+    font-size: 25px;
+    font-family: var(--heading);
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+#stream .live_text .live_menu{
+    margin-top: 30px;
+}
+
+#stream .live_text .live_menu h4{
+    color: var(--hover);
+    font-size: 25px;
+    font-family: var(--heading);
+    text-transform: uppercase;
+}
+
+#stream .live_text .live_menu h5 i{
+    font-size: 20px;
+    margin-right: 9px;
+}
+
+#stream .live_text .live_menu h5{
+    color: var(--body-color);
+    font-size: 25px;
+    font-family: var(--heading);
+}
+
+
+
+/* ===========================
+        STREAM CSS END
+============================*/
+/* ===========================
+        COUNTER CSS START
+============================*/
+#counter{
+    padding: 90px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#counter:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+#counter .counter_part{
+    padding: 40px;
+    text-align: center;
+    border: 1px solid var(--title-color);
+    background: #191919;
+    backdrop-filter: blur(5px);
+}
+
+#counter .counter_part h3{
+    color: var(--title-color);
+    font-size: 50px;
+    font-weight: 400;
+    font-family: var(--heading);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#counter .counter_part p{
+    color: var(--body-color);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--paragraph);
+    text-transform: capitalize;
+}
+/* ===========================
+        COUNTER CSS END
+============================*/
+
+/* ===========================
+        PRODUCT CSS START
+============================*/
+
+#product{
+    padding-bottom: 90px;
+}
+
+#product .section_heading{
+    color: var(--title-color);
+    font-size: 100px;
+    font-family: 400;
+    font-family: var(--heading);
+    text-transform: capitalize;
+    position: relative;
+     margin-bottom: 60px;
+}
+
+#product .section_heading:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 8px;
+    background: var(--hover);
+}
+
+#product .product_part{
+    position: relative;
+    clip-path: polygon(20% 0, 100% 0, 100% 30%, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0 10%);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#product .product_part:after,
+#product .product_part:before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 0px;
+    background: linear-gradient(185deg, rgba(22,22,22,1) 0%, rgba(207,0,15,1) 50%, rgba(22,22,22,1) 100%);
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    z-index: 9;
+}
+
+#product .product_part:before{
+    right: 0;
+}
+
+#product .product_part:after{
+    left: 0;
+}
+
+#product .product_part .product_img{
+    text-align: center;
+    background: #191919;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#product .product_part .product_img .icon {
+    position: absolute;
+    top: 0;
+    right: -128px;
+    transition: var(--transition) ;
+    -webkit-transition: var(--transition) ;
+    -moz-transition: var(--transition) ;
+    -ms-transition: var(--transition) ;
+    -o-transition: var(--transition) ;
+}
+
+#product .product_part .product_img a{
+    color: var(--title-color);
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: rgba(207, 0, 14, 0.8);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#product .product_part .product_text {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#product .product_part .product_text h3{
+    color: var(--body-color);
+    font-size: 35px;
+    font-weight: 600;
+    font-family: var(--paragraph);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#product .product_part .product_text h5{
+    color: var(--title-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: var(--heading);
+    text-transform: capitalize;
+}
+
+#product .product_part:hover:after,
+#product .product_part:hover:before{
+    height: 200px;
+}
+
+#product .product_part:hover .product_img .icon{
+	right: 0;
+}
+
+#product .product_part .product_img a:hover{
+    background: var(--hover);
+    color: var(--title-color);
+}
+/* ===========================
+        PRODUCT CSS END
+============================*/
+
+/* ===========================
+        JOIN CSS START
+============================*/
+#join{
+    padding-top: 90px;
+    border-top: 2px dashed var(--body-color);
+}
+
+#join .join_vdo{
+    position: relative;
+}
+
+#join .join_vdo:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#join .join_vdo .play a{
+    position: absolute;
+    font-size: 25px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    color: var(--hover);
+    background: var(--title-color);
+    text-align: center;
+    line-height: 90px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    z-index: 99;
+}
+
+/* #join .join_text{
+    margin-top: 20px;
+} */
+
+#join .join_text h3{
+    color: var(--hover);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--heading);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 5px;
+}
+
+#join .join_text h2{
+    color: var(--title-color);
+    font-size: 32px;
+    font-weight: 400;
+    font-family: var(--heading);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#join .join_text p{
+    color: var(--body-color);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--paragraph);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    padding-right: 150px;
+}
+
+#join .join_text a{
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--heading);
+    background: var(--hover);
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#join .join_text a:hover{
+    background: #9e000b;
+}
+/* ===========================
+        JOIN CSS END
+============================*/
+
+/* ===========================
+        REVIEW CSS START
+============================*/
+#player{
+    margin-top: 90px;
+    padding: 60px 0;
+    background: #191919;
+}
+
+#player .section_heading{
+    color: var(--title-color);
+    font-size: 100px;
+    font-family: 400;
+    font-family: var(--heading);
+    text-transform: capitalize;
+    position: relative;
+     margin-bottom: 60px;
+}
+
+#player .section_heading h4{
+    color: var(--hover);
+}
+
+#player .section_heading h4 span{
+    color: var(--title-color)
+}
+
+#player .player_img{
+    position: relative;
+    overflow: hidden;
+}
+
+
+#player .player_part .player_img ul {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    opacity: 0;
+}
+
+
+
+#player .player_part .player_img ul li a{
+    color: var(--title-color);
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: var(--hover);
+    margin: 0 5px;
+}
+
+#player .player_part .player_img {
+    text-align: center;
+}
+
+#player .player_part .player_text h3{
+    color: var(--title-color);
+    font-size: 32px;
+    font-weight: 400;
+    font-family: var(--heading);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+#player .player_part:hover .player_img ul{
+    bottom: 13px;
+    opacity: 1;
+}
+/* ===========================
+        REVIEW CSS END
+============================*/
+
+
+/* ===========================
+        SUBSCRIBE CSS START
+============================*/
+#sub{
+    padding: 90px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#sub:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+#sub .sub_part h2{
+    color: var(--title-color);
+    font-size: 45px;
+    font-weight: 400;
+    font-family: var(--heading);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+#sub .sub_part h2 span{
+    color: var(--hover);
+}
+
+#sub .sub_part a{
+    color: #222;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--heading);
+    background: var(--title-color);
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+/* ===========================
+        SUBSCRIBE CSS END
+============================*/
+
+/* ===========================
+        ANIMATION CSS START
+============================*/
+
+/* ===========================
+        ANIMATION CSS END
+============================*/
+
+/* ===========================
         NAV CSS START
 ============================*/
 /* ===========================
         NAV CSS END
+============================*/
+
+/* ===========================
+        FOOTER CSS START
+============================*/
+#footer{
+    padding: 90px 0;
+}
+
+#footer .footer_left p{
+    color: var(--body-color);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--paragraph);
+    line-height: 24px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+#footer .footer_left .social ul li a{
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.219);
+    text-align: center;
+    margin-right: 10px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#footer .footer_part h3{
+    color: var(--title-color);
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--heading);
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+#footer .footer_part ul li a{
+    color: var(--body-color);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--paragraph);
+    text-transform: capitalize;
+    position: relative;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    margin-bottom: 5px;
+}
+
+#footer .footer_part ul li a:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--hover);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+#footer .footer_left .social ul li a:hover{
+    background: var(--title-color);
+    color: #161616;
+}
+
+#footer .footer_part ul li a:hover{
+    color: var(--hover);
+    padding-left: 5px;
+}
+
+#footer .footer_part ul li a:hover:after{
+    width: 5px;
+}
+/* ===========================
+        FOOTER CSS END
 ============================*/
