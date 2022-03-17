@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+:root {
+    --hover: #cf000f;
+    --title-color: #fff;
+    --body-color: #767676;
+    --transition: all linear .3s;
+    --heading: 'Russo One', sans-serif;
+    --paragraph: 'DM Sans', sans-serif;
+}
+
+b {
+    color: var(--hover);
+}
+
+/* contact part start */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #141414;
+}
+
+#contact .register {
+    padding: 30px;
+    background: #191919;
+}
+
+#contact .register img {
+    margin-bottom: 20px;
+}
+
+#contact .register h2 {
+    color: var(--body-color);
+    font-size: 40px;
+    font-weight: 400;
+    font-family: var(--heading);
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact .register h3 {
+    color: var(--title-color);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--paragraph);
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contact .register a {
+    color: var(--hover);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--heading);
+}
+
+#contact .register input:placeholder {
+    color: #7c7c7c;
+}
+
+#contact .register input {
+    background: #313131;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    padding: 10px 20px;
+    color: #7c7c7c;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--paragraph);
+}
+
+#contact .register button {
+    background: var(--hover);
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--heading);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+/* contact part end */
