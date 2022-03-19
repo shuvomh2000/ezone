@@ -40,13 +40,21 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
 $(function () {
     'use strict'
 
+     // preloader
+
+     $(window).load(function() {
+        $("#overlayer").delay(2000).fadeOut("slow");
+        $(".loader").delay(2000).fadeOut("slow");
+      
+    })
+
     // count down timer
 
-    $('.main_timer').countdown('2022/05/30', function(event) {
+    $('.main_timer').countdown('2022/05/30', function (event) {
         // $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
 
         $(this).html(event.strftime('<div class="single_counter">%d <span>days</span></div> <div class="single_counter">%H <span>hours</span></div> <div class="single_counter">%M <span>minutes</span></div> <div class="single_counter">%S <span>seconds</span></div>'));
-      });
+    });
 
     // slick slider (flash sale)
     $('.sale_slide').slick({
@@ -93,18 +101,8 @@ $(function () {
     $('.counter_up').counterUp();
 
 
-    $('.counting').counterUp();
 
-
-
-    // venobox(player)
-    $('.img_venobox').venobox({});
-
-    // countdown timer
-    $('#example').showTimer({
-        wrapper_id: "myCountdown"
-    });
-
-
+   
+    
 
 })

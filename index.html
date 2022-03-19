@@ -18,6 +18,15 @@
 </head>
 
 <body>
+
+  <!-- preloader start -->
+  <div id="overlayer"></div>
+  <span class="loader">
+    <span class="loader-inner"></span>
+  </span>
+  <!-- preloader end -->
+
+
   <!-- ============================
                 NAV START
     ==============================-->
@@ -26,11 +35,11 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="images/ezone1.png" alt="">
+            <img class="img-fluid w-100" src="images/ezone1.png" alt="ezone1">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto menu">
@@ -57,6 +66,75 @@
         </div>
       </nav>
     </div>
+    <!-- float icon start-->
+    <div class="float_icon">
+      <ul>
+        <li><a class="cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+            href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <!-- offcanvas start -->
+          <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+          <div class="offcanvas offcanvas-end cart_off" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">shopping cart<b>.</b></h5>
+              <button type="button" class=" close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                  class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="row justify-content-between">
+                <div class="col-lg-6">
+                  <h3>controller</h3>
+                  <h6>1 X <span>$25</span></h6>
+                </div>
+                <div class="col-lg-4">
+                  <div class="cart_img">
+                    <img class="img-fluid w-100" src="images/product1.png" alt="">
+                    <a class="icon_close" href="#"><i class="fa-solid fa-trash-can"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="col-lg-6">
+                  <h3>headphone</h3>
+                  <h6>2 X <span>$37</span></h6>
+                </div>
+                <div class="col-lg-4">
+                  <div class="cart_img">
+                    <img class="img-fluid w-100" src="images/product2.png" alt="">
+                    <a class="icon_close" href="#"><i class="fa-solid fa-trash-can"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout">
+                <a class="checkout" href="#">checkout: $99</a>
+              </div>
+            </div>
+          </div>
+          <!-- offcanvas end -->
+        </li>
+        <li><a class="glass" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+            aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <div class="search_btn">
+            <!-- top canvas start -->
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+              <!-- <div class="offcanvas-header">
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    </div> -->
+              <div class="offcanvas-body">
+                <div class="search_txt">
+                  <input type="text" placeholder="search">
+                </div>
+              </div>
+            </div>
+            <!-- top canvas end -->
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- float icon end -->
   </nav>
   <!-- ============================
                 NAV END
@@ -97,18 +175,15 @@
       <div class="timer">
         <h5>flash sale end :</h5>
         <!--  -->
-        <div class="main_timer">
-        </div>
+        <div class="main_timer"></div>
         <!--  -->
-
-
       </div>
       <div class="row sale_slide">
         <!-- 1 -->
         <div class="col-lg-3">
           <div class="sale_part">
             <div class="sale_img">
-              <img src="images/product1.png" alt="product1">
+              <img class="img-fluid w-100" src="images/product1.png" alt="product1">
               <div class="sale_icon">
                 <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
               </div>
@@ -123,7 +198,7 @@
         <div class="col-lg-3">
           <div class="sale_part">
             <div class="sale_img">
-              <img src="images/product2.png" alt="product2">
+              <img class="img-fluid w-100" src="images/product2.png" alt="product2">
               <div class="sale_icon">
                 <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
               </div>
@@ -138,7 +213,7 @@
         <div class="col-lg-3">
           <div class="sale_part">
             <div class="sale_img">
-              <img src="images/product3.png" alt="product3">
+              <img class="img-fluid w-100" src="images/product3.png" alt="product3">
               <div class="sale_icon">
                 <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
               </div>
@@ -153,7 +228,7 @@
         <div class="col-lg-3">
           <div class="sale_part">
             <div class="sale_img">
-              <img src="images/product4.png" alt="product4">
+              <img class="img-fluid w-100" src="images/product4.png" alt="product4">
               <div class="sale_icon">
                 <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
               </div>
@@ -168,7 +243,7 @@
         <div class="col-lg-3">
           <div class="sale_part">
             <div class="sale_img">
-              <img src="images/product2.png" alt="product2">
+              <img class="img-fluid w-100" src="images/product2.png" alt="product2">
               <div class="sale_icon">
                 <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
               </div>
@@ -198,12 +273,12 @@
       <div class="row justify-content-between">
         <div class="col-lg-4">
           <div class="about_img">
-            <img src="images/about1.png" alt="about1">
+            <img class="img-fluid w-100" src="images/about1.png" alt="about1">
           </div>
         </div>
         <div class="col-lg-7">
           <div class="about_text">
-            <h3>ezone.</h3>
+            <a class="ezone" href="#banner">ezone.</a>
             <h4>it's platfrom for professional E-Sport gamers<b>.</b></h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corrupti vero distinctio quibusdam
               nesciunt. Nostrum aliquam fugiat enim facilis adipisci recusandae, tempora et quo illo itaque provident
@@ -213,7 +288,7 @@
                 Adipisci, quisquam eligendi mollitia doloremque similique. Adipisci, quisquam eligendi mollitia
                 obcaecati id harum. Quam nemo cumque ipsa voluptatum expedita!</span>
             </p>
-            <a href="#">explore more</a>
+            <a class="btn" href="#">explore more</a>
           </div>
         </div>
       </div>
@@ -235,7 +310,7 @@
         <!-- 1 -->
         <div class="col-lg-4">
           <div class="live_img">
-            <img class="img-fluid w-100" src="images/stream2.jpg" alt="live1">
+            <img class="img-fluid w-100" src="images/stream2.jpg" alt="stream2">
             <i class="fa-solid fa-plus plus"></i>
           </div>
           <div class="live_text">
@@ -245,7 +320,7 @@
                 <h4>live..</h4>
               </div>
               <div class="col-lg-4">
-                <h5><i class="fa-solid fa-eye"></i>23k</h5>
+                <h5><i class="fa-solid fa-eye"></i>87k</h5>
               </div>
             </div>
           </div>
@@ -253,7 +328,7 @@
         <!-- 2 -->
         <div class="col-lg-4">
           <div class="live_img">
-            <img class="img-fluid w-100" src="images/stream3.jpg" alt="live1">
+            <img class="img-fluid w-100" src="images/stream3.jpg" alt="stream3">
             <i class="fa-solid fa-plus plus"></i>
           </div>
           <div class="live_text">
@@ -263,7 +338,7 @@
                 <h4>live.</h4>
               </div>
               <div class="col-lg-4">
-                <h5><i class="fa-solid fa-eye"></i>23k</h5>
+                <h5><i class="fa-solid fa-eye"></i>53k</h5>
               </div>
             </div>
           </div>
@@ -271,7 +346,7 @@
         <!-- 3 -->
         <div class="col-lg-4">
           <div class="live_img">
-            <img class="img-fluid w-100" src="images/stram4.jpg" alt="live1">
+            <img class="img-fluid w-100" src="images/stram4.jpg" alt="stram4">
             <i class="fa-solid fa-plus plus"></i>
           </div>
           <div class="live_text">
@@ -281,7 +356,7 @@
                 <h4>live..</h4>
               </div>
               <div class="col-lg-4">
-                <h5><i class="fa-solid fa-eye"></i>23k</h5>
+                <h5><i class="fa-solid fa-eye"></i>25k</h5>
               </div>
             </div>
           </div>
@@ -289,7 +364,7 @@
         <!--  -->
         <div class="col-lg-4">
           <div class="live_img">
-            <img class="img-fluid w-100" src="images/stream3.jpg" alt="live1">
+            <img class="img-fluid w-100" src="images/stream3.jpg" alt="stream3">
             <i class="fa-solid fa-plus plus"></i>
           </div>
           <div class="live_text">
@@ -320,32 +395,35 @@
       <div class="row">
         <div class="col-lg-3">
           <div class="counter_part">
-            <h3 class="counter_up">203</h3>
-            <p>total Players</p>
+            <h3 class="counter_up">4</h3>
+            <span>m<b>.</b></span>
+            <p>resgistared Players</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="counter_part">
-            <h3 class="counter_up">203 </h3>
-            <p>total Players</p>
+            <h3 class="counter_up">87</h3>
+            <span>k<b>.</b></span>
+            <p>total streamer</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="counter_part">
-            <h3 class="counter_up">203</h3>
-            <p>total Players</p>
+            <h3 class="counter_up">889</h3>
+            <span>k<b>.</b></span>
+            <p>watching Players</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="counter_part">
-            <h3 class="counter_up">203</h3>
-            <p>total Players</p>
+            <h3 class="counter_up">2</h3>
+            <span>k<b>.</b></span>
+            <p>total Sponsers</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- <span>k</span><b>.</b> -->
   <!-- ============================
                 COUNTER END
     ==============================-->
@@ -363,7 +441,7 @@
         <div class="col-lg-3">
           <div class="product_part">
             <div class="product_img">
-              <img src="images/product1.png" alt="product1">
+              <img class="img-fluid w-100" src="images/product1.png" alt="product1">
               <div class="icon">
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="#"><i class="fa-solid fa-heart"></i></a>
@@ -379,7 +457,7 @@
         <div class="col-lg-3">
           <div class="product_part">
             <div class="product_img">
-              <img src="images/product2.png" alt="product2">
+              <img class="img-fluid w-100" src="images/product2.png" alt="product2">
               <div class="icon">
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="#"><i class="fa-solid fa-heart"></i></a>
@@ -395,7 +473,7 @@
         <div class="col-lg-3">
           <div class="product_part">
             <div class="product_img">
-              <img src="images/product3.png" alt="product3">
+              <img class="img-fluid w-100" src="images/product3.png" alt="product3">
               <div class="icon">
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="#"><i class="fa-solid fa-heart"></i></a>
@@ -411,7 +489,7 @@
         <div class="col-lg-3">
           <div class="product_part">
             <div class="product_img">
-              <img src="images/product4.png" alt="product4">
+              <img class="img-fluid w-100" src="images/product4.png" alt="product4">
               <div class="icon">
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="#"><i class="fa-solid fa-heart"></i></a>
@@ -427,7 +505,7 @@
         <div class="col-lg-3">
           <div class="product_part">
             <div class="product_img">
-              <img src="images/product2.png" alt="product2">
+              <img class="img-fluid w-100" src="images/product2.png" alt="product2">
               <div class="icon">
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="#"><i class="fa-solid fa-heart"></i></a>
@@ -463,12 +541,12 @@
         </div>
         <div class="col-lg-6">
           <div class="join_text">
-            <h3>play with ezone.</h3>
+            <h3>play with <a class="ezone" href="#banner">ezone.</a></h3>
             <h2>play and streaming with ezone and make your future<b>.</b>
             </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vel exercitationem, pariatur mollitia
               commodi nostrum.</p>
-            <a href="#">join community</a>
+            <a class="btn" href="#">join community</a>
           </div>
         </div>
       </div>
@@ -479,22 +557,20 @@
     ==============================-->
 
   <!-- ============================
-                player START
+                PLAYER START
     ==============================-->
   <section id="player">
     <div class="container px-lg-o">
       <div class="section_heading">
         players<b>.</b>
-        <h4>weekly top ranking players worldwide from <span>ezone</span><b>.</b></h4>
+        <h4>weekly top ranking players worldwide from <a class="ezone" href="#banner">ezone</a><b>.</b></h4>
       </div>
       <div class="row player_slide">
         <!-- 1 -->
         <div class="col-lg-4">
           <div class="player_part">
             <div class="player_img">
-              <img class="img-fluid w-100 img_venobox" src="images/player5.jpg" alt="player1">
-              <!-- <a class="venobox" data-gall="gallery01" href="images/player5.jpg"><img class="img-fluid w-100 img_venobox" src="images/player5.jpg" alt="player1"></a> -->
-
+              <img class="img-fluid w-100" src="images/player5.jpg" alt="player5">
               <ul class="d-flex justify-content-center">
                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -510,7 +586,7 @@
         <div class="col-lg-4">
           <div class="player_part">
             <div class="player_img">
-              <img class="img-fluid w-100 img_venobox" src="images/player6.jpg" alt="player1">
+              <img class="img-fluid w-100" src="images/player6.jpg" alt="player6">
               <ul class="d-flex justify-content-center">
                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -526,7 +602,7 @@
         <div class="col-lg-4">
           <div class="player_part">
             <div class="player_img">
-              <img class="img-fluid w-100 img_venobox" src="images/player7.jpg" alt="player1">
+              <img class="img-fluid w-100" src="images/player7.jpg" alt="player7">
               <ul class="d-flex justify-content-center">
                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -542,7 +618,7 @@
         <div class="col-lg-4">
           <div class="player_part">
             <div class="player_img">
-              <img class="img-fluid w-100 img_venobox" data-gall="my<a href="  src="images/player6.jpg" alt="player1">
+              <img class="img-fluid w-100" data-gall="my<a href=" src="images/player6.jpg" alt="player6">
               <ul class="d-flex justify-content-center">
                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -559,7 +635,7 @@
     </div>
   </section>
   <!-- ============================
-                player END
+                PLAYER END
     ==============================-->
 
   <!-- ============================
@@ -583,23 +659,6 @@
   </section>
   <!-- ============================
                 SUBSCRIBE END
-    ==============================-->
-
-  <!-- ============================
-                 END
-    ==============================-->
-  <!-- ============================
-                 END
-    ==============================-->
-
-  <!-- ============================
-            optional START
-    ==============================-->
-  <section id="optional">
-
-  </section>
-  <!-- ============================
-            optional END
     ==============================-->
 
   <!-- ============================
@@ -674,83 +733,12 @@
         <i class="fa-solid fa-angle-up"></i>
       </div>
       <!-- back to top end -->
-      <!-- float icon start-->
-      <div class="float_icon">
-        <ul>
-          <li><a class="cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
-              href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <!-- offcanvas start -->
-            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
-
-            <div class="offcanvas offcanvas-end cart_off" tabindex="-1" id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel">
-              <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">shopping cart<b>.</b></h5>
-                <button type="button" class=" close" data-bs-dismiss="offcanvas" aria-label="Close"><i
-                    class="fa-solid fa-xmark"></i></button>
-              </div>
-              <div class="offcanvas-body">
-                <div class="row justify-content-between">
-                  <div class="col-lg-6">
-                    <h3>controller</h3>
-                    <h6>1 X <span>$25</span></h6>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="cart_img">
-                      <img class="img-fluid w-100" src="images/product1.png" alt="">
-                      <a class="icon_close" href="#"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="row justify-content-between">
-                  <div class="col-lg-6">
-                    <h3>headphone</h3>
-                    <h6>2 X <span>$37</span></h6>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="cart_img">
-                      <img class="img-fluid w-100" src="images/product2.png" alt="">
-                      <a class="icon_close" href="#"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="checkout">
-                  <a class="checkout" href="#">checkout: $99</a>
-                </div>
-              </div>
-            </div>
-            <!-- offcanvas end -->
-          </li>
-          <li><a class="glass" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-              aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <div class="search_btn">
-              <!-- top canvas start -->
-              <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                <!-- <div class="offcanvas-header">
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-                </div> -->
-                <div class="offcanvas-body">
-                  <div class="search_txt">
-                    <input type="text" placeholder="search">
-                  </div>
-                </div>
-              </div>
-              <!-- top canvas end -->
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- float icon end-->
     </div>
     <!-- copyright start -->
   </footer>
   <!-- ============================
                 FOOTER END
     ==============================-->
-
-
 
   <!-- ============================
                 JS START
