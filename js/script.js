@@ -40,12 +40,20 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
 $(function () {
     'use strict'
 
+    // count down timer
+
+    $('.main_timer').countdown('2022/05/30', function(event) {
+        // $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+
+        $(this).html(event.strftime('<div class="single_counter">%d <span>days</span></div> <div class="single_counter">%H <span>hours</span></div> <div class="single_counter">%M <span>minutes</span></div> <div class="single_counter">%S <span>seconds</span></div>'));
+      });
+
     // slick slider (flash sale)
     $('.sale_slide').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         nextArrow: false,
         prevArrow: false
     });
@@ -54,7 +62,7 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         nextArrow: false,
         prevArrow: false
     });
@@ -63,7 +71,7 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         nextArrow: false,
         prevArrow: false
     });
@@ -72,22 +80,30 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         nextArrow: false,
         prevArrow: false
     });
 
 
     // counter part start
-	// $(selector).countMe(delay,speed)
-	// $(".counter_up").countMe();
+    // $(selector).countMe(delay,speed)
+    // $(".counter_up").countMe();
+
+    $('.counter_up').counterUp();
+
+
+    $('.counting').counterUp();
 
 
 
     // venobox(player)
-    $('.img_venobox').venobox({ 
-    });
+    $('.img_venobox').venobox({});
 
+    // countdown timer
+    $('#example').showTimer({
+        wrapper_id: "myCountdown"
+    });
 
 
 

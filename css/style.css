@@ -37,7 +37,7 @@ a {
 
 body {
     background: #161616;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
 }
 
@@ -258,14 +258,32 @@ b {
     font-weight: 400;
     font-family: var(--heading);
     text-transform: capitalize;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 }
 
-#sale .timer h5 span {
+#sale .timer .main_timer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#sale .timer .main_timer .single_counter{
+    width: 23%;
+    background: #191919;
+    text-align: center;
+    padding: 25px;
     color: var(--title-color);
-    text-transform: lowercase;
-    font-family: var(--paragraph);
+    font-size: 32px;
+    font-weight: 400;
+    font-family: var(--heading);
+}
+
+#sale .timer .main_timer .single_counter span{
+    display: block;
+    color: var(--body-color);
+    text-transform: capitalize;
 }
 
 #sale .sale_part .sale_part {
@@ -636,8 +654,7 @@ b {
     border: 1px solid var(--hover);
     background: #191919;
     backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px #cf000f,
-        0 0 20px #cf000f;
+    box-shadow: 0 0 10px #cf000f;
 }
 
 #counter .counter_part h3 {
@@ -656,7 +673,32 @@ b {
     font-family: var(--paragraph);
     text-transform: capitalize;
 }
+/*  */
 
+#counter:after{
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.count_cont{
+    padding: 45px 0;
+}
+
+.count_col h3{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
+
+.count_col p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+}
+
+/*  */
 /* ===========================
         COUNTER CSS END
 ============================*/
