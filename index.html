@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/venobox.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -31,110 +32,106 @@
                 NAV START
     ==============================-->
   <nav id="nav">
-    <div class="container px-lg-o">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img class="img-fluid w-100" src="images/ezone1.png" alt="ezone1">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto menu">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#banner">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">about us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#stream">stream</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#product">product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#player">player</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link contact" href="register.html">contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <!-- float icon start-->
-    <div class="float_icon">
-      <ul>
-        <li><a class="cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
-            href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-          <!-- offcanvas start -->
-          <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                  aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
-
-          <div class="offcanvas offcanvas-end cart_off" tabindex="-1" id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-              <h5 id="offcanvasRightLabel">shopping cart<b>.</b></h5>
-              <button type="button" class=" close" data-bs-dismiss="offcanvas" aria-label="Close"><i
-                  class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="offcanvas-body">
-              <div class="row justify-content-between">
-                <div class="col-lg-6">
-                  <h3>controller</h3>
-                  <h6>1 X <span>$25</span></h6>
-                </div>
-                <div class="col-lg-4">
-                  <div class="cart_img">
-                    <img class="img-fluid w-100" src="images/product1.png" alt="">
-                    <a class="icon_close" href="#"><i class="fa-solid fa-trash-can"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-between">
-                <div class="col-lg-6">
-                  <h3>headphone</h3>
-                  <h6>2 X <span>$37</span></h6>
-                </div>
-                <div class="col-lg-4">
-                  <div class="cart_img">
-                    <img class="img-fluid w-100" src="images/product2.png" alt="">
-                    <a class="icon_close" href="#"><i class="fa-solid fa-trash-can"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="checkout">
-                <a class="checkout" href="#">checkout: $99</a>
-              </div>
+    <div class="nav_part">
+      <div class="container px-lg-o">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img class="img-fluid w-100" src="images/ezone1.png" alt="ezone1">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto menu">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#banner">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">about us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#stream">stream</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#product">product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#player">player</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link contact" href="register.html">contact</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <!-- offcanvas end -->
-        </li>
-        <li><a class="glass" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-            aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></a>
-          <div class="search_btn">
-            <!-- top canvas start -->
-            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-              <!-- <div class="offcanvas-header">
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                    </div> -->
+        </nav>
+      </div>
+      <!-- float icon start-->
+      <div class="float_icon">
+        <ul>
+          <li><a class="cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+              href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <div class="counter">2</div>
+            <!-- offcanvas start -->
+            <div class="offcanvas offcanvas-end cart_off" tabindex="-1" id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">shopping cart<b>.</b></h5>
+                <button type="button" class=" close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-xmark"></i></button>
+              </div>
               <div class="offcanvas-body">
-                <div class="search_txt">
-                  <input type="text" placeholder="search">
+                <div class="row justify-content-between">
+                  <div class="col-lg-6 col-6">
+                    <h3>controller</h3>
+                    <h6>1 X <span>$25</span></h6>
+                  </div>
+                  <div class="col-lg-4 col-5">
+                    <div class="cart_img">
+                      <img class="img-fluid w-100" src="images/product1.png" alt="">
+                      <a class="icon_close" href="#"><i class="fa-solid fa-trash-can"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-between">
+                  <div class="col-lg-6 col-6">
+                    <h3>headphone</h3>
+                    <h6>2 X <span>$37</span></h6>
+                  </div>
+                  <div class="col-lg-4 col-5">
+                    <div class="cart_img">
+                      <img class="img-fluid w-100" src="images/product2.png" alt="">
+                      <a class="icon_close" href="#"><i class="fa-solid fa-trash-can"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout">
+                  <a class="checkout" href="#">checkout: $99</a>
                 </div>
               </div>
             </div>
-            <!-- top canvas end -->
-          </div>
-        </li>
-      </ul>
+            <!-- offcanvas end -->
+          </li>
+          <li><a class="glass" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <div class="search_btn">
+              <!-- top canvas start -->
+              <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-body">
+                  <div class="search_txt">
+                    <input type="text" placeholder="search">
+                  </div>
+                </div>
+              </div>
+              <!-- top canvas end -->
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- float icon end -->
     </div>
-    <!-- float icon end -->
   </nav>
   <!-- ============================
                 NAV END
@@ -180,7 +177,7 @@
       </div>
       <div class="row sale_slide">
         <!-- 1 -->
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-6">
           <div class="sale_part">
             <div class="sale_img">
               <img class="img-fluid w-100" src="images/product1.png" alt="product1">
@@ -195,7 +192,7 @@
           </div>
         </div>
         <!-- 2 -->
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-6">
           <div class="sale_part">
             <div class="sale_img">
               <img class="img-fluid w-100" src="images/product2.png" alt="product2">
@@ -210,7 +207,7 @@
           </div>
         </div>
         <!-- 3 -->
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-6">
           <div class="sale_part">
             <div class="sale_img">
               <img class="img-fluid w-100" src="images/product3.png" alt="product3">
@@ -225,7 +222,7 @@
           </div>
         </div>
         <!-- 4 -->
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-6">
           <div class="sale_part">
             <div class="sale_img">
               <img class="img-fluid w-100" src="images/product4.png" alt="product4">
@@ -308,7 +305,7 @@
       </div>
       <div class="row stream_slide">
         <!-- 1 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 col">
           <div class="live_img">
             <img class="img-fluid w-100" src="images/stream2.jpg" alt="stream2">
             <i class="fa-solid fa-plus plus"></i>
@@ -316,17 +313,17 @@
           <div class="live_text">
             <h3>YT Gaming</h3>
             <div class="row justify-content-between live_menu">
-              <div class="col-lg-3">
-                <h4>live..</h4>
+              <div class="col-lg-3 col-6">
+                <h4>live.</h4>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-6">
                 <h5><i class="fa-solid fa-eye"></i>87k</h5>
               </div>
             </div>
           </div>
         </div>
         <!-- 2 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 col">
           <div class="live_img">
             <img class="img-fluid w-100" src="images/stream3.jpg" alt="stream3">
             <i class="fa-solid fa-plus plus"></i>
@@ -334,17 +331,17 @@
           <div class="live_text">
             <h3>A1 eSPORTS</h3>
             <div class="row justify-content-between live_menu">
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-6">
                 <h4>live.</h4>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-6">
                 <h5><i class="fa-solid fa-eye"></i>53k</h5>
               </div>
             </div>
           </div>
         </div>
         <!-- 3 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 col">
           <div class="live_img">
             <img class="img-fluid w-100" src="images/stram4.jpg" alt="stram4">
             <i class="fa-solid fa-plus plus"></i>
@@ -352,17 +349,17 @@
           <div class="live_text">
             <h3>toxic woldwide</h3>
             <div class="row justify-content-between live_menu">
-              <div class="col-lg-3">
-                <h4>live..</h4>
+              <div class="col-lg-3 col-6">
+                <h4>live.</h4>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-6">
                 <h5><i class="fa-solid fa-eye"></i>25k</h5>
               </div>
             </div>
           </div>
         </div>
         <!--  -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 col">
           <div class="live_img">
             <img class="img-fluid w-100" src="images/stream3.jpg" alt="stream3">
             <i class="fa-solid fa-plus plus"></i>
@@ -370,10 +367,10 @@
           <div class="live_text">
             <h3>A1 eSPORTS</h3>
             <div class="row justify-content-between live_menu">
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-6">
                 <h4>live.</h4>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-6">
                 <h5><i class="fa-solid fa-eye"></i>23k</h5>
               </div>
             </div>
@@ -747,7 +744,6 @@
   <script src="js/jquery.counterup.min.js"></script>
   <script src="js/jquery.countdown.min.js"></script>
   <script src="js/slick.min.js"></script>
-  <script src="js/venobox.min.js"></script>
   <script src="js/waypoints.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>

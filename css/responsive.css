@@ -1,0 +1,458 @@
+@media (min-width: 1400px) {}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (max-width:575.98px) {
+
+    /* ================================
+            NAV CSS START 
+    =================================*/
+
+    #nav .float_icon ul li .cart,
+    #nav .float_icon ul li .glass {
+        background: rgba(207, 0, 14, 0.7);
+    }
+
+    #nav .offcanvas-end {
+        width: 70%;
+    }
+
+    #nav .float_icon ul li .cart_off .offcanvas-header h5 {
+        font-size: 18px;
+        ;
+    }
+
+    #nav .float_icon ul li .cart_off .offcanvas-body h6 {
+        font-size: 14px;
+    }
+
+    #nav .float_icon ul li .cart_off .offcanvas-body h6 span {
+        font-size: 18px;
+    }
+
+    #nav .float_icon ul li .cart_off .offcanvas-body .checkout a {
+        font-size: 14px;
+    }
+
+    #nav .float_icon ul li .search_btn .offcanvas-body .search_txt input {
+        width: 100%;
+        padding: 40px 50px;
+        font-size: 25px;
+    }
+
+    #nav .float_icon ul li .search_btn .offcanvas-body .search_txt input::placeholder {
+        font-size: 25px;
+    }
+
+    #nav .offcanvas-top {
+        height: 15vh;
+        ;
+    }
+
+    #nav .navbar-toggler:focus {
+        text-decoration: none;
+        box-shadow: 0 0 0 0;
+    }
+
+    #nav .navbar-toggler i {
+        color: var(--title-color);
+    }
+
+    #nav .menu {
+        background: #141414;
+        margin-top: 5px;
+    }
+
+    #nav .menu li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    #nav .menu li:nth-child(5) {
+        border-bottom: none;
+    }
+
+    #nav .menu li:last-child {
+        border-bottom: none;
+    }
+
+    #nav .menu li a {
+        font-size: 14px;
+    }
+
+    #nav .menu li .contact {
+        text-align: center;
+    }
+
+    /* #nav .float_icon {
+        display: none;
+    } */
+
+    /* ================================
+            NAV CSS START 
+    =================================*/
+
+    /* ================================
+            BANNER CSS START 
+    =================================*/
+
+    #banner {
+        padding: 100px 0;
+    }
+
+    #banner .banner_store h3,
+    #banner .banner_store h4 {
+        font-size: 45px;
+    }
+
+    #banner .banner_store p {
+        text-align: center;
+    }
+
+    #banner .banner_store .btn {
+        margin-top: 25px;
+    }
+
+    #banner .banner_store .btn a {
+        font-size: 14px;
+    }
+
+    #banner .banner_store .btn .round {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        right: 50px;
+        top: 5px;
+    }
+
+    /* ================================
+            BANNER CSS END 
+    =================================*/
+
+
+    /* ================================
+            SALE CSS START 
+    =================================*/
+
+    #sale {
+        padding: 60px 0;
+    }
+
+    #sale .timer h5 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    #sale .timer .main_timer .single_counter {
+        font-size: 18px;
+    }
+
+    #sale .timer .main_timer .single_counter span {
+        font-size: 14px;
+    }
+
+    #sale .sale_part .sale_text h3 {
+        font-size: 19px;
+    }
+
+    #sale .sale_part .sale_text h4 span {
+        font-size: 20px;
+    }
+
+
+    #sale .sale_part .sale_img:hover::after,
+    #sale .sale_part .sale_img:hover::before {
+        height: 90px;
+    }
+
+    #sale .sale_part .sale_img .sale_icon .cart {
+        color: var(--title-color);
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    /* ================================
+            SALE CSS END 
+    =================================*/
+
+
+
+    /* ================================
+            ABOUT CSS START 
+    =================================*/
+    #about::after {
+        display: none;
+    }
+
+    #about .section_heading {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    #about .section_heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #about .about_text {
+        text-align: center;
+    }
+
+    #about .about_text h4 {
+        font-size: 18px;
+    }
+
+    #about .about_text p {
+        margin-top: 20px;
+    }
+
+    #about .about_text p span {
+        margin-top: 20px;
+    }
+
+    #about .about_text .ezone {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #about .about_text .btn {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    /* ================================
+            ABOUT CSS END 
+    =================================*/
+
+    /* ================================
+            STREAM CSS START 
+    =================================*/
+    #stream {
+        padding: 60px 0;
+    }
+
+    #stream .section_heading {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    #stream .section_heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* ================================
+            STREAM CSS END 
+    =================================*/
+
+
+    /* ================================
+            COUNTER CSS START 
+    =================================*/
+
+    #counter {
+        padding: 60px 0;
+    }
+
+    #counter .counter_part {
+        border: none;
+        box-shadow: none;
+    }
+
+    /* ================================
+            COUNTER CSS END 
+    =================================*/
+
+    /* ================================
+            PRODUCT CSS START 
+    =================================*/
+    #product {
+        padding: 60px 0;
+    }
+
+    #product .section_heading {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    #product .section_heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #product .product_part .product_img .icon {
+        right: 0;
+    }
+
+    #product .product_part .product_img a {
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #product .product_part .product_img:after,
+    #product .product_part .product_img:before {
+        box-shadow: none;
+    }
+
+    #product .product_part:hover .product_img:after,
+    #product .product_part:hover .product_img:before {
+        height: 100px;
+    }
+
+    #product .product_part .product_text h3 {
+        font-size: 19px;
+    }
+
+    #product .product_part .product_text h5 {
+        font-size: 25px;
+    }
+
+    /* ================================
+            PRODUCT CSS END 
+    =================================*/
+
+    /* ================================
+            JOIN CSS START 
+    =================================*/
+    #join {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    #join:before,
+    #join:after {
+        width: 20px;
+        box-shadow: none;
+    }
+
+    #join .join_vdo .play a {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    #join .join_text h3 {
+        font-size: 16px;
+    }
+
+    #join .join_text h2 {
+        font-size: 18px;
+    }
+
+    #join .join_text p {
+        padding-right: 0;
+    }
+
+    #join .join_text .btn {
+        font-size: 14px;
+    }
+
+    /* ================================
+            JOIN CSS END 
+    =================================*/
+
+    /* ================================
+            PLAYER CSS START 
+    =================================*/
+    #player {
+        padding: 60px 0;
+    }
+
+    #player .section_heading {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    #player .section_heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #player .section_heading h4 {
+        font-size: 14px;
+    }
+
+    #player .player_part .player_img img {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
+
+    #player .player_part .player_img ul {
+        bottom: 13px;
+        opacity: 1;
+    }
+
+    /* ================================
+            PLAYER CSS END 
+    =================================*/
+
+    /* ================================
+            SUBSCRIBE CSS START 
+    =================================*/
+    #sub {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    #sub .sub_part h2 {
+        font-size: 35px;
+    }
+
+    #sub .sub_part a {
+        font-size: 14px;
+    }
+
+    /* ================================
+            SUBSCRIBE CSS END 
+    =================================*/
+    /* ================================
+            FOOTER CSS START 
+    =================================*/
+    #footer {
+        padding-top: 60px;
+    }
+
+
+
+    #footer .footer_part {
+        margin-top: 30px;
+    }
+
+
+    /* copyright-------------- */
+
+    #footer .copyright {
+        height: 50px;
+        background: #191919;
+        margin-top: 60px;
+    }
+
+    #footer .copyright h3 {
+        line-height: 50px;
+    }
+
+    #footer .copyright .bk_btn i {
+        font-size: 14px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    /* ================================
+            FOOTER CSS END 
+    =================================*/
+
+}

@@ -40,13 +40,27 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
 $(function () {
     'use strict'
 
-     // preloader
+    // preloader
 
-     $(window).load(function() {
-        $("#overlayer").delay(2000).fadeOut("slow");
+    $(window).load(function () {
+        // $("body").delay(2000).fadeOut();
         $(".loader").delay(2000).fadeOut("slow");
-      
+        $("#overlayer").delay(2000).fadeOut("slow");
+
     })
+
+    // menu fixed
+
+    var navofff = $('.nav_part').offset().top;
+
+    $(window).scroll(function(){
+        var scrolling = $(this).scrollTop();
+        if(scrolling > navofff){
+            $('.nav_part').addClass('menu_fixed')
+        }else{
+            $('.nav_part').removeClass('menu_fixed')
+        }
+    });
 
     // count down timer
 
@@ -63,8 +77,37 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         nextArrow: false,
-        prevArrow: false
+        prevArrow: false,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 575,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     });
+
     // slick slider (stream)
     $('.stream_slide').slick({
         slidesToShow: 3,
@@ -72,8 +115,37 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         nextArrow: false,
-        prevArrow: false
+        prevArrow: false,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 575,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     });
+
     // slick slider (product)
     $('.product_slide').slick({
         slidesToShow: 4,
@@ -81,7 +153,35 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         nextArrow: false,
-        prevArrow: false
+        prevArrow: false,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 575,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     });
     // slick slider (player)
     $('.player_slide').slick({
@@ -90,19 +190,44 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         nextArrow: false,
-        prevArrow: false
+        prevArrow: false,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 575,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     });
 
 
-    // counter part start
-    // $(selector).countMe(delay,speed)
-    // $(".counter_up").countMe();
-
+    // counter part
     $('.counter_up').counterUp();
 
 
 
-   
-    
+
+
 
 })
