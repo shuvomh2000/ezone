@@ -89,10 +89,12 @@ $(function () {
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 767,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                nextArrow: false,
+                prevArrow: false,
+                slidesToShow: 3,
+                slidesToScroll: 1
               }
             },
             {
@@ -127,7 +129,7 @@ $(function () {
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 767,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
@@ -165,10 +167,12 @@ $(function () {
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 767,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                nextArrow: false,
+                prevArrow: false,
+                slidesToShow: 3,
+                slidesToScroll: 1
               }
             },
             {
@@ -202,10 +206,12 @@ $(function () {
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 767,
               settings: {
+                nextArrow: false,
+                prevArrow: false,
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 1
               }
             },
             {
