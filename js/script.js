@@ -80,28 +80,32 @@ $(function () {
         prevArrow: false,
         responsive: [
             {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 767,
+              breakpoint: 991.98,
               settings: {
                 nextArrow: false,
                 prevArrow: false,
                 slidesToShow: 3,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
               }
             },
             {
-              breakpoint: 575,
+              breakpoint: 767.98,
+              settings: {
+                nextArrow: false,
+                prevArrow: false,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: false
+              }
+            },
+            {
+              breakpoint: 575.98,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: false
               }
             }
             // You can unslick at a given breakpoint now by adding:
@@ -120,23 +124,25 @@ $(function () {
         prevArrow: false,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 991.98,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                nextArrow: false,
+                prevArrow: false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: false
               }
             },
             {
-              breakpoint: 767,
+              breakpoint: 767.98,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
               }
             },
             {
-              breakpoint: 575,
+              breakpoint: 575.98,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -158,16 +164,18 @@ $(function () {
         prevArrow: false,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 991.98,
               settings: {
+                nextArrow: false,
+                prevArrow: false,
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: false
               }
             },
             {
-              breakpoint: 767,
+              breakpoint: 767.98,
               settings: {
                 nextArrow: false,
                 prevArrow: false,
@@ -176,7 +184,7 @@ $(function () {
               }
             },
             {
-              breakpoint: 575,
+              breakpoint: 575.98,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
@@ -197,16 +205,18 @@ $(function () {
         prevArrow: false,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 991.98,
               settings: {
+                nextArrow: false,
+                prevArrow: false,
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: false
               }
             },
             {
-              breakpoint: 767,
+              breakpoint: 767.98,
               settings: {
                 nextArrow: false,
                 prevArrow: false,
@@ -215,7 +225,7 @@ $(function () {
               }
             },
             {
-              breakpoint: 575,
+              breakpoint: 575.98,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -232,8 +242,24 @@ $(function () {
     $('.counter_up').counterUp();
 
 
+    // back to top button
 
+  $(".bk_btn").on('click', function(){
+    $('html,body').animate({
+      scrollTop: 0
+    });
 
+  });
+  $(window).on('scroll', function(){
+    var abc = $(this).scrollTop();
+
+    if(abc > 150){
+      $(".bk_btn").fadeIn()
+    }else{
+      $(".bk_btn").fadeOut()
+    }
+
+  });
 
 
 })

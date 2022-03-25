@@ -4,7 +4,334 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {}
 
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* ================================
+            NAV CSS START 
+    =================================*/
+    #nav .float_icon ul li .cart,
+    #nav .float_icon ul li .glass {
+        background: rgba(207, 0, 14, 0.7);
+    }
+
+    .offcanvas-end {
+        width: 300px;
+    }
+
+    #nav .float_icon ul li .cart_off .offcanvas-header h5 {
+        font-size: 18px;
+    }
+
+    #nav .float_icon ul li .cart_off .offcanvas-body h6 {
+        font-size: 14px;
+    }
+
+    #nav .float_icon ul li .cart_off .offcanvas-body h6 span {
+        font-size: 18px;
+    }
+
+    #nav .float_icon ul li .cart_off .offcanvas-body .checkout a {
+        font-size: 14px;
+    }
+
+    #nav .float_icon ul li .search_btn .offcanvas-body .search_txt input {
+        width: 100%;
+        padding: 44px 50px;
+        font-size: 25px;
+    }
+
+    #nav .offcanvas-top {
+        height: 18vh;
+    }
+
+    #nav .navbar-toggler i {
+        color: var(--title-color);
+    }
+
+
+    #nav .menu {
+        background: #141414;
+        margin-top: 5px;
+    }
+
+    #nav .navbar-toggler:focus {
+        text-decoration: none;
+        box-shadow: 0 0 0 0;
+    }
+
+    /* ================================
+            NAV CSS END 
+    =================================*/
+
+    /* ================================
+            BANNER CSS START 
+    =================================*/
+    #banner {
+        padding: 130px 0;
+    }
+
+    #banner .banner_store h3 {
+        font-size: 65px;
+    }
+
+    #banner .banner_store h4 {
+        font-size: 65px;
+    }
+
+    #banner .banner_store p {
+        padding-right: 300px;
+    }
+
+    #banner .banner_store .btn a {
+        font-size: 16px;
+    }
+
+    #banner .banner_store .btn {
+        margin-top: 25px;
+    }
+
+    #banner .banner_store .btn .round {
+        right: 250px;
+    }
+
+    /* ================================
+            BANNER CSS END 
+    =================================*/
+
+    /* ================================
+            SALE CSS START 
+    =================================*/
+    #sale {
+        padding: 75px 0;
+    }
+
+    #sale .timer h5 {
+        font-size: 32px;
+    }
+
+    #sale .timer .main_timer .single_counter {
+        font-size: 26px;
+    }
+
+    #sale .sale_part .sale_text h3 {
+        font-size: 23px;
+    }
+
+    #sale .sale_part .sale_text h4 span {
+        font-size: 26px;
+    }
+
+    /* ================================
+            SALE CSS END 
+    =================================*/
+
+    /* ================================
+            ABOUT CSS START 
+    =================================*/
+    #about::after {
+        top: 50px;
+        right: -100px;
+        width: 400px;
+        height: 400px;
+        border: 40px solid #161616;
+    }
+
+    #about .section_heading {
+        font-size: 90px;
+    }
+
+    #about .about_text .ezone {
+        margin-top: 10px;
+    }
+
+    #about .about_text p {
+        text-align: justify;
+    }
+
+    #about .about_text .btn {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    /* ================================
+            ABOUT CSS END 
+    =================================*/
+
+    /* ================================
+            STREAM CSS START 
+    =================================*/
+    #stream {
+        padding: 75px 0;
+    }
+
+    #stream .section_heading {
+        font-size: 90px;
+    }
+
+    /* ================================
+            STREAM CSS END 
+    =================================*/
+
+    /* ================================
+            COUNTER CSS START 
+    =================================*/
+    #counter {
+        padding: 75px 0;
+    }
+
+    #counter .counter_part {
+        border: none !important;
+        box-shadow: none !important;
+        margin-bottom: 20px;
+    }
+
+    #counter .counter_part h3 {
+        font-size: 45px;
+    }
+
+    #counter .counter_part span {
+        font-size: 45px;
+    }
+
+    #counter .counter_part p {
+        font-size: 16px;
+    }
+
+    /* ================================
+            COUNTER CSS END 
+    =================================*/
+
+    /* ================================
+            PRODUCT CSS START 
+    =================================*/
+    #product {
+        padding: 75px 0;
+    }
+
+    #product .section_heading {
+        font-size: 90px;
+    }
+
+    #product .product_part .product_img a {
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    #product .product_part .product_text h3 {
+        font-size: 23px;
+    }
+
+    #product .product_part .product_text h5 {
+        font-size: 28px;
+    }
+
+    /* ================================
+            PRODUCT CSS END 
+    =================================*/
+
+    /* ================================
+            JOIN CSS START 
+    =================================*/
+    #join {
+        padding: 75px 0;
+    }
+
+    #join .join_text h3 {
+        margin-top: 15px;
+    }
+
+    #join .join_text h2 {
+        font-size: 28px;
+        margin-top: 8px;
+    }
+
+    #join .join_text .btn {
+        font-size: 16px;
+    }
+
+    /* ================================
+            JOIN CSS END 
+    =================================*/
+
+    /* ================================
+            PLAYER CSS START 
+    =================================*/
+    #player {
+        padding: 75px 0;
+    }
+
+    #player .section_heading {
+        font-size: 90px;
+    }
+
+    #player .section_heading h4 {
+        font-size: 20px;
+    }
+
+    #player .player_part .player_img ul li a {
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    #player .player_part .player_text h3 {
+        font-size: 18px;
+    }
+
+    /* ================================
+            PLAYER CSS END 
+    =================================*/
+
+    /* ================================
+            SUBSCRIBE CSS START 
+    =================================*/
+    #sub {
+        padding: 75px 0;
+        text-align: center;
+    }
+
+    #sub .sub_part h2 {
+        font-size: 36px;
+    }
+
+    #sub .sub_part a {
+        font-size: 16px;
+    }
+
+    #footer .footer_part {
+        text-align: center;
+    }
+
+    #footer .footer_left .social {
+        margin-bottom: 35px;
+    }
+
+    #footer .footer_part ul li a:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+
+    #footer .copyright {
+        margin-top: 75px;
+    }
+
+    /* ================================
+            SUBSCRIBE CSS END 
+    =================================*/
+
+    /* ================================
+            NAV CSS START 
+    =================================*/
+    /* ================================
+            NAV CSS END 
+    =================================*/
+}
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     /* ================================
@@ -57,6 +384,7 @@
         background: #141414;
         margin-top: 5px;
     }
+
     /* ================================
             NAV CSS END 
     =================================*/
@@ -64,7 +392,7 @@
     /* ================================
             BANNER CSS START 
     =================================*/
-    
+
     #banner {
         padding: 120px 0;
     }
@@ -97,6 +425,7 @@
         right: 80px;
         top: -10px;
     }
+
     /* ================================
             BANNER CSS END 
     =================================*/
@@ -153,6 +482,7 @@
     #sale .sale_part .sale_img:hover::before {
         height: 90px;
     }
+
     /* ================================
             SALE CSS END 
     =================================*/
@@ -203,6 +533,7 @@
         font-size: 16px;
         margin-top: 20px;
     }
+
     /* ================================
             ABOUT CSS END 
     =================================*/
@@ -214,7 +545,7 @@
         padding: 65px 0;
     }
 
-    
+
     #stream .section_heading {
         font-size: 80px;
         text-align: center;
@@ -236,7 +567,8 @@
     }
 
     #stream .live_text h3 {
-        font-size: 22px;;
+        font-size: 22px;
+        ;
         margin-top: 0px;
         text-align: center;
     }
@@ -256,6 +588,7 @@
     #stream .live_text .live_menu h5 i {
         font-size: 15px;
     }
+
     /* ================================
             STREAM CSS END 
     =================================*/
@@ -293,6 +626,7 @@
         backdrop-filter: blur(5px);
         box-shadow: 0 0 10px #cf000f;
     }
+
     /* ================================
             COUNTER CSS END 
     =================================*/
@@ -304,7 +638,7 @@
         padding: 65px 0;
     }
 
-    
+
     #product .section_heading {
         font-size: 80px;
         text-align: center;
@@ -338,6 +672,7 @@
     #product .product_part:hover .product_img::before {
         height: 100px;
     }
+
     /* ================================
             PRODUCT CSS END 
     =================================*/
@@ -372,6 +707,7 @@
     #join .join_text .btn {
         font-size: 16px;
     }
+
     /* ================================
             JOIN CSS END 
     =================================*/
@@ -383,7 +719,7 @@
         padding: 65px 0;
     }
 
-    
+
     #player .section_heading {
         font-size: 80px;
         text-align: center;
@@ -413,6 +749,7 @@
     #player .player_part .player_text h3 {
         font-size: 22px;
     }
+
     /* ================================
             PLAYER CSS END 
     =================================*/
@@ -432,6 +769,7 @@
     #sub .sub_part a {
         font-size: 16px;
     }
+
     /* ================================
             SUBSCRIBE CSS END 
     =================================*/
@@ -450,6 +788,7 @@
     #footer .copyright {
         margin-top: 65px;
     }
+
     /* ================================
             FOOTER CSS END 
     =================================*/
@@ -610,7 +949,7 @@
         font-size: 19px;
     }
 
-    #sale .sale_part .sale_text h4{
+    #sale .sale_part .sale_text h4 {
         font-size: 14px;
     }
 
@@ -635,7 +974,7 @@
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
-}
+    }
 
     /* ================================
             SALE CSS END 
@@ -802,7 +1141,7 @@
         line-height: 80px;
     }
 
-    #join .join_text{
+    #join .join_text {
         margin-top: 15px;
     }
 
