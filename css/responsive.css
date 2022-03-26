@@ -1,9 +1,9 @@
 @media (min-width: 1400px) {}
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {}
-
+/* large */
 @media (min-width: 992px) and (max-width: 1199.98px) {}
-
+/* medium */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
     /* ================================
@@ -129,11 +129,7 @@
             ABOUT CSS START 
     =================================*/
     #about::after {
-        top: 50px;
-        right: -100px;
-        width: 400px;
-        height: 400px;
-        border: 40px solid #161616;
+    display: none;
     }
 
     #about .section_heading {
@@ -332,7 +328,7 @@
             NAV CSS END 
     =================================*/
 }
-
+/* small */
 @media (min-width: 576px) and (max-width: 767.98px) {
     /* ================================
             NAV CSS START 
@@ -793,7 +789,7 @@
             FOOTER CSS END 
     =================================*/
 }
-
+/* extra small */
 @media (max-width:575.98px) {
 
     /* ================================

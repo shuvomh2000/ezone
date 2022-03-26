@@ -21,10 +21,13 @@
 <body>
 
   <!-- preloader start -->
-  <div id="overlayer"></div>
-  <span class="loader">
-    <span class="loader-inner"></span>
-  </span>
+  <div id="overlayer">
+    <div class="loader_part">
+      <span class="loader">
+        <span class="loader-inner"></span>
+      </span>
+    </div>
+  </div>
   <!-- preloader end -->
 
 
@@ -73,7 +76,7 @@
         <ul>
           <li><a class="cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
               href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-              <div class="counter">2</div>
+            <div class="counter">2</div>
             <!-- offcanvas start -->
             <div class="offcanvas offcanvas-end cart_off" tabindex="-1" id="offcanvasRight"
               aria-labelledby="offcanvasRightLabel">
@@ -118,7 +121,7 @@
               aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></a>
             <div class="search_btn">
               <!-- top canvas start -->
-              <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+              <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop">
                 <div class="offcanvas-body">
                   <div class="search_txt">
                     <input type="text" placeholder="search">

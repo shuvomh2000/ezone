@@ -45,83 +45,87 @@ b {
     color: var(--hover);
 }
 
- /*PRELOADING------------ */
- #overlayer {
-    width:100%;
-    height:100%;  
-    position:absolute;
-    z-index:999999;
-    background:#141414;
-  }
-  .loader {
+/*PRELOADING------------ */
+#overlayer {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999999;
+    background: #141414;
+}
+
+#overlayer .loader_part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader {
     display: inline-block;
     width: 60px;
     height: 60px;
-    position: absolute;
-    z-index:3;
-    border: 7px solid var(--title-color);
-    top: 5%;
+    z-index: 3;
+    border: 7px solid var(--hover);
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
     animation: loader 2s infinite ease;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    z-index:9999999;
+    z-index: 9999999;
 }
-  
-  .loader-inner {
+
+.loader-inner {
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color: var(--title-color);
+    background-color: var(--hover);
     animation: loader-inner 2s infinite ease-in;
-  }
-  
-  @keyframes loader {
+}
+
+@keyframes loader {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-    
+
     25% {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
-    
+
     50% {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
-    
+
     75% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-    
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  @keyframes loader-inner {
+}
+
+@keyframes loader-inner {
     0% {
-      height: 0%;
+        height: 0%;
     }
-    
+
     25% {
-      height: 0%;
+        height: 0%;
     }
-    
+
     50% {
-      height: 100%;
+        height: 100%;
     }
-    
+
     75% {
-      height: 100%;
+        height: 100%;
     }
-    
+
     100% {
-      height: 0%;
+        height: 0%;
     }
-  }
+}
 
 /* ===========================
         COMMON CSS END
@@ -138,7 +142,7 @@ b {
     z-index: 9999;
 }
 
-#nav .nav_part{
+#nav .nav_part {
     transition: var(--transition);
     -webkit-transition: var(--transition);
     -moz-transition: var(--transition);
@@ -146,7 +150,7 @@ b {
     -o-transition: var(--transition);
 }
 
-#nav .menu_fixed{
+#nav .menu_fixed {
     position: fixed;
     top: 0;
     left: 0;
@@ -179,6 +183,7 @@ b {
 #nav .menu li .contact {
     color: var(--title-color) !important;
 }
+
 /* floting icon start */
 
 
@@ -211,21 +216,21 @@ b {
     position: relative;
 }
 
-#nav .float_icon .counter{
+#nav .float_icon .counter {
     position: absolute;
     top: 0;
     left: 0;
     width: 18px;
     height: 18px;
     line-height: 18px;
-    text-align:center;
+    text-align: center;
     background: var(--title-color);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    color:var(--hover);
+    color: var(--hover);
     font-size: 14px;
     font-weight: 400;
     font-family: var(--heading);
@@ -408,7 +413,7 @@ b {
     text-transform: capitalize;
 }
 
-#banner .banner_store h4{
+#banner .banner_store h4 {
     color: var(--title-color);
     font-size: 70px;
     font-weight: 500;
@@ -457,6 +462,7 @@ b {
         background-color: #ccc;
     }
 }
+
 /* auto type css end */
 #banner .banner_store p {
     color: var(--title-color);
@@ -548,14 +554,14 @@ b {
 
 }
 
-#sale .timer .main_timer{
+#sale .timer .main_timer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-#sale .timer .main_timer .single_counter{
+#sale .timer .main_timer .single_counter {
     width: 23%;
     background: #191919;
     text-align: center;
@@ -567,7 +573,7 @@ b {
 }
 
 
-#sale .timer .main_timer .single_counter span{
+#sale .timer .main_timer .single_counter span {
     display: block;
     color: var(--body-color);
     text-transform: capitalize;
@@ -972,6 +978,7 @@ b {
     font-family: var(--paragraph);
     text-transform: capitalize;
 }
+
 /* ===========================
         COUNTER CSS END
 ============================*/
@@ -1555,7 +1562,7 @@ b {
     line-height: 70px;
 }
 
-#footer .copyright .bk_btn{
+#footer .copyright .bk_btn {
     display: none;
 }
 

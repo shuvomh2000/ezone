@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -12,181 +12,217 @@ h6,
 ol,
 ul,
 a {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    display: inline-block;
+  text-decoration: none;
+  display: inline-block;
 }
 
 :root {
-    --hover: #cf000f;
-    --title-color: #fff;
-    --body-color: #767676;
-    --transition: all linear .3s;
-    --heading: 'Russo One', sans-serif;
-    --paragraph: 'DM Sans', sans-serif;
+  --hover: #cf000f;
+  --title-color: #fff;
+  --body-color: #767676;
+  --transition: all linear .3s;
+  --heading: 'Russo One', sans-serif;
+  --paragraph: 'DM Sans', sans-serif;
 }
 
 b {
-    color: var(--hover);
+  color: var(--hover);
 }
 
-/* contact part start */
+/* contact part start------------------------ */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #141414;
 }
 
-  /*PRELOADING------------ */
-  #overlayer {
-    width:100%;
-    height:100%;  
-    position:absolute;
-    z-index:1;
-    background:#141414;
+/*PRELOADING------------ */
+#overlayer {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999999;
+  background: #141414;
+}
+
+#overlayer .loader_part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  z-index: 3;
+  border: 7px solid var(--hover);
+  top: 50%;
+  left: 50%;
+  animation: loader 2s infinite ease;
+  z-index: 9999999;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: var(--hover);
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
   }
-  .loader {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    z-index:3;
-    border: 7px solid var(--title-color);
-    top: 50%;
-    animation: loader 2s infinite ease;
+
+  25% {
+    transform: rotate(180deg);
   }
-  
-  .loader-inner {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
-    background-color: var(--title-color);
-    animation: loader-inner 2s infinite ease-in;
+
+  50% {
+    transform: rotate(180deg);
   }
-  
-  @keyframes loader {
-    0% {
-      transform: rotate(0deg);
-    }
-    
-    25% {
-      transform: rotate(180deg);
-    }
-    
-    50% {
-      transform: rotate(180deg);
-    }
-    
-    75% {
-      transform: rotate(360deg);
-    }
-    
-    100% {
-      transform: rotate(360deg);
-    }
+
+  75% {
+    transform: rotate(360deg);
   }
-  
-  @keyframes loader-inner {
-    0% {
-      height: 0%;
-    }
-    
-    25% {
-      height: 0%;
-    }
-    
-    50% {
-      height: 100%;
-    }
-    
-    75% {
-      height: 100%;
-    }
-    
-    100% {
-      height: 0%;
-    }
+
+  100% {
+    transform: rotate(360deg);
   }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
 
 #contact .register {
-    padding: 30px;
-    background: #191919;
+  padding: 30px;
+  background: #191919;
 }
 
 #contact .register img {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #contact .register h2 {
-    color: var(--body-color);
-    font-size: 40px;
-    font-weight: 400;
-    font-family: var(--heading);
-    text-transform: capitalize;
-    text-align: center;
-    margin-bottom: 30px;
+  color: var(--body-color);
+  font-size: 40px;
+  font-weight: 400;
+  font-family: var(--heading);
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 #contact .register h3 {
-    color: var(--title-color);
-    font-size: 16px;
-    font-weight: 400;
-    font-family: var(--paragraph);
-    text-align: center;
-    margin-top: 20px;
+  color: var(--title-color);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--paragraph);
+  text-align: center;
+  margin-top: 20px;
 }
 
 #contact .register a {
-    color: var(--hover);
-    font-size: 16px;
-    font-weight: 400;
-    font-family: var(--heading);
+  color: var(--hover);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--heading);
 }
 
 #contact .register input:placeholder {
-    color: #7c7c7c;
+  color: #7c7c7c;
 }
 
 #contact .register input {
-    background: #313131;
-    border: none;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    padding: 10px 20px;
-    color: #7c7c7c;
-    font-size: 15px;
-    font-weight: 400;
-    font-family: var(--paragraph);
+  background: #313131;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  padding: 10px 20px;
+  color: #7c7c7c;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--paragraph);
 }
 
 #contact .register button {
-    background: var(--hover);
-    border: none;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    color: var(--title-color);
-    font-size: 18px;
-    font-weight: 400;
-    font-family: var(--heading);
-    text-transform: capitalize;
-    letter-spacing: 1px;
+  background: var(--hover);
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--heading);
+  text-transform: capitalize;
+  letter-spacing: 1px;
 }
 
-/* contact part end */
+/* contact part end-------------------------- */
+
+/* responsive part start--------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #contact {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #contact {
+    text-align: center;
+  }
+}
+
+@media (max-width:575.98px) {
+  #contact {
+    text-align: center;
+  }
+
+  #contact .register h2 {
+    font-size: 26px;
+  }
+}
+
+/* responsive part end----------------------- */
