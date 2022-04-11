@@ -165,11 +165,6 @@ body {
   font-family: var(--heading);
 }
 
-#contact .register input:placeholder {
-  color: #7c7c7c;
-}
-
-
 #contact .register .contact_input input {
   background: #313131;
   border: none;
@@ -186,8 +181,10 @@ body {
   margin-bottom: 15px;
 }
 
-#contact .register .contact_input input:focus {
-  box-shadow: none;
+#contact .form-control:focus {
+	color: var(--title-color);
+	outline: 0;
+	box-shadow: 0 0 0 0 rgba(13,110,253,.25);
 }
 
 #contact .register .check input {
